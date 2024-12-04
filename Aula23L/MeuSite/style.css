@@ -1,0 +1,116 @@
+/* Estilos para desktop */
+@media (min-width: 769px) {
+    #cabecalho_mobile {
+        display: none;  /*não exibe o cabeçalho no mobile*/
+    }
+    
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(183, 39, 39);
+        font-weight: bold;
+    }
+    
+    .cabecalho_logo {
+        padding: 2.em 0;
+        width: 10em;
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cabecalho_menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(151, 27, 27);
+        padding: 2%;
+        border-radius: 10px ;
+    }
+    
+    .cabecalho_item-menu a {
+        margin-left: 1em;
+        margin-right: 1em;
+        padding: 1.86em 1.42em;
+        text-decoration: none;
+        color: rgb(16, 16, 17);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    #cabecalho_desk {
+        display: none;
+    }
+
+}
+
+.escondida {
+    display: none;
+}
+
+#dropdown-menu {
+    padding: 2%;
+    align-items: start;
+}
+
+#dropdown-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+
+.banner-texto {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner {
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(img/cocacola.jpg);
+background-size: cover;
+width: 100%;
+height: 500px;
+}
+
+.banner-texto {
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+color: #fff;
+text-transform: uppercase;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 20px;
+border-radius: 30px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+transition: all 0.5s ease;
+}
+
+.banner-texto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px 0 rgba(255, 255, 255, 0.439);
+}
+
+.botao-saiba-mais {
+    transition: all 0.5s ease;
+    background-color: rgba(22, 22, 22, 0.382);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 120px;
+    margin-top: 5px;
+    align-self: center;
+}
+
+.botao-saiba-mais:hover {
+    transform: translateY(-2px);
+    background-color: #08080831;
+    box-shadow: 0 20px 30px 0 rgb(110, 3, 3);
+}
